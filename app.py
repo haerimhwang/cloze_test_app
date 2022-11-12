@@ -80,7 +80,7 @@ with st.empty():
 with st.empty(): 
     st.subheader('Cloze test')
 
-container_cloze = st.empty()
+container_cloze = st.container(height = 600)
 
 
 
