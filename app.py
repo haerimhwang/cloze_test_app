@@ -7,8 +7,16 @@ from load_css import local_css
 local_css("style.css")
 #from PIL import Image
 
-
-st.set_page_config(layout="wide")
+def _max_width_(prcnt_width:int = 75):
+    max_width_str = f"max-width: {prcnt_width}%;"
+    st.markdown(f""" 
+                <style> 
+                .reportview-container .main .block-container{{{max_width_str}}}
+                </style>    
+                """, 
+                unsafe_allow_html=True,
+    )
+    
 st.title('Cloze test generator')
 
 #@st.cache
