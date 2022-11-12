@@ -8,9 +8,7 @@ local_css("style.css")
 #from PIL import Image
 
 
-def do_stuff_on_page_load(...):
-    st.set_page_config(layout="wide")
-
+st.set_page_config(layout="wide")
 st.title('Cloze test generator')
 
 #@st.cache
