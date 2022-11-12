@@ -8,7 +8,7 @@ local_css("style.css")
 #from PIL import Image
 
 def _max_width_(prcnt_width:int = 75):
-    max_width_str = f"max-width: {prcnt_width}%;"
+    max_width_str = f"max-width: {82}%;"
     st.markdown(f""" 
                 <style> 
                 .reportview-container .main .block-container{{{max_width_str}}}
